@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JUNGLE-FOOD</h1>
+      <!-- <img src="logo.png" alt="Logo" /> -->
+    </header>
+    <main>
+      <div class="container">
+        <div id="cart-container"></div>
+
+        <h2>Choix du sandwich</h2>
+        <select id="sandwich-select">
+          <option value="">-- Sélectionnez un sandwich --</option>
+          <option value="galette">Galette 7€</option>
+          <option value="pain">Pain 7€</option>
+          <option value="tacos">Tacos 7€</option>
+          <option value="burger">Burger 7€</option>
+          <option value="panini">Panini 7€</option>
+        </select>
+
+        <h2>Choix de la viande</h2>
+        <select id="meat-select">
+          <option value="">-- Sélectionnez une viande --</option>
+          <option value="poulet">Poulet</option>
+          <option value="kefta">Kefta</option>
+          <option value="kebab">Kebab</option>
+          <option value="escalope">Escalope</option>
+          <option value="nuggets">Nuggets</option>
+          <option value="steak">Steak</option>
+        </select>
+
+        <h2>Choix de la sauce (maximum 3)</h2>
+        <div id="sauce-container">
+          <label
+            ><input
+              type="checkbox"
+              name="sauce"
+              value="mayo"
+            />Mayonnaise</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="sauce"
+              value="ketchup"
+            />Ketchup</label
+          >
+          <label
+            ><input type="checkbox" name="sauce" value="buggy" />Buggy</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="sauce"
+              value="moutarde"
+            />Moutarde</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="sauce"
+              value="blanche"
+            />Blanche</label
+          >
+        </div>
+
+        <h2>Choix des condiments</h2>
+        <div id="condiment-container">
+          <label
+            ><input
+              type="checkbox"
+              name="condiment"
+              value="salade"
+            />Salade</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="condiment"
+              value="oignon"
+            />Oignon</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="condiment"
+              value="tomate"
+            />Tomate</label
+          >
+          <label
+            ><input type="checkbox" name="condiment" value="oeuf" />Oeuf</label
+          >
+        </div>
+
+        <h2>Barquette de Frites</h2>
+        <select id="fries-select">
+          <option value="">-- Sélectionnez une taille --</option>
+          <option value="petite">Petite 2€</option>
+          <option value="moyenne">Moyenne 3€</option>
+          <option value="grande">Grande 4€</option>
+        </select>
+
+        <h2>Boissons</h2>
+        <select id="drink-select">
+          <option value="">-- Sélectionnez une boisson --</option>
+          <option value="coca">Coca-Cola 1€</option>
+          <option value="pepsi">Pepsi 1€</option>
+          <option value="fanta">Fanta 1€</option>
+          <option value="sprite">Sprite 1€</option>
+        </select>
+
+        <button onclick="addToCart()">Ajouter au panier</button>
+        <button onclick="resetForm()">Réinitialiser</button>
+        <div id="button-validate"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2023 Jungle-Food. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
