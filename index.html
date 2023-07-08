@@ -6,23 +6,23 @@
   <body>
     <header>
       <h1>JUNGLE-FOOD</h1>
-      <!-- <img src="logo.png" alt="Logo" /> -->
     </header>
     <main>
       <div class="container">
         <div id="cart-container"></div>
 
-        <h2>Choix du sandwich</h2>
+        <h2>Choix pain 🥖</h2>
         <select id="sandwich-select">
           <option value="">-- Sélectionnez un sandwich --</option>
-          <option value="galette">Galette 7€</option>
-          <option value="pain">Pain 7€</option>
-          <option value="tacos">Tacos 7€</option>
+          <option value="galette">Galette 7,50€</option>
+          <option value="pain">Pain long 7€</option>
+          <option value="pain">Pain rond 7€</option>
+          <option value="tacos">Tacos 7,50€</option>
           <option value="burger">Burger 7€</option>
           <option value="panini">Panini 7€</option>
         </select>
 
-        <h2>Choix de la viande</h2>
+        <h2>Choix viande 🍖</h2>
         <select id="meat-select">
           <option value="">-- Sélectionnez une viande --</option>
           <option value="poulet">Poulet</option>
@@ -33,70 +33,63 @@
           <option value="steak">Steak</option>
         </select>
 
-        <h2>Choix de la sauce (maximum 3)</h2>
+        <h2>Choix sauce 🌶️</h2>
         <div id="sauce-container">
           <label
-            ><input
-              type="checkbox"
-              name="sauce"
-              value="mayo"
-            />Mayonnaise</label
-          >
+            ><input type="checkbox" name="sauce" value="mayo" />
+            <span>Mayonnaise</span>
+          </label>
           <label
-            ><input
-              type="checkbox"
-              name="sauce"
-              value="ketchup"
-            />Ketchup</label
-          >
+            ><input type="checkbox" name="sauce" value="ketchup" />
+            <span>Ketchup</span>
+          </label>
           <label
-            ><input type="checkbox" name="sauce" value="buggy" />Buggy</label
-          >
+            ><input type="checkbox" name="sauce" value="samouraï" />
+            <span>Samouraï</span>
+          </label>
           <label
-            ><input
-              type="checkbox"
-              name="sauce"
-              value="moutarde"
-            />Moutarde</label
-          >
+            ><input type="checkbox" name="sauce" value="moutarde" />
+            <span>Moutarde</span>
+          </label>
           <label
-            ><input
-              type="checkbox"
-              name="sauce"
-              value="blanche"
-            />Blanche</label
-          >
+            ><input type="checkbox" name="sauce" value="blanche" />
+            <span>Blanche</span>
+          </label>
+          <label
+            ><input type="checkbox" name="sauce" value="harrisa" />
+            <span>Harissa</span>
+          </label>
+          <label
+            ><input type="checkbox" name="sauce" value="algerienne" />
+            <span>Algerienne</span>
+          </label>
+          <label
+            ><input type="checkbox" name="sauce" value="andalouse" />
+            <span>Andalouse</span>
+          </label>
         </div>
 
-        <h2>Choix des condiments</h2>
+        <h2>Choix Crudités 🥬</h2>
         <div id="condiment-container">
           <label
-            ><input
-              type="checkbox"
-              name="condiment"
-              value="salade"
-            />Salade</label
-          >
+            ><input type="checkbox" name="condiment" value="salade" />
+            <span>Salade</span>
+          </label>
           <label
-            ><input
-              type="checkbox"
-              name="condiment"
-              value="oignon"
-            />Oignon</label
-          >
+            ><input type="checkbox" name="condiment" value="oignon" />
+            <span>Oignon</span>
+          </label>
           <label
-            ><input
-              type="checkbox"
-              name="condiment"
-              value="tomate"
-            />Tomate</label
-          >
+            ><input type="checkbox" name="condiment" value="tomate" />
+            <span>Tomate</span>
+          </label>
           <label
-            ><input type="checkbox" name="condiment" value="oeuf" />Oeuf</label
-          >
+            ><input type="checkbox" name="condiment" value="poivron" />
+            <span> Poivron </span>
+          </label>
         </div>
 
-        <h2>Barquette de Frites</h2>
+        <h2>Barquette de Frites 🍟</h2>
         <select id="fries-select">
           <option value="">-- Sélectionnez une taille --</option>
           <option value="petite">Petite 2€</option>
@@ -104,13 +97,22 @@
           <option value="grande">Grande 4€</option>
         </select>
 
-        <h2>Boissons</h2>
+        <h2>Boissons 🥤</h2>
         <select id="drink-select">
           <option value="">-- Sélectionnez une boisson --</option>
           <option value="coca">Coca-Cola 1€</option>
           <option value="pepsi">Pepsi 1€</option>
           <option value="fanta">Fanta 1€</option>
           <option value="sprite">Sprite 1€</option>
+        </select>
+
+        <h2>Deserts 🍰</h2>
+        <select id="dessert-select">
+          <option value="">-- Sélectionnez un dessert --</option>
+          <option value="tarte">Tarte au daim 2€</option>
+          <option value="cookie">Cookie 2€</option>
+          <option value="donut">Donut 1€</option>
+          <option value="rownie">Brownie 1€</option>
         </select>
 
         <button onclick="addToCart()">Ajouter au panier</button>
