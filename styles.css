@@ -7,6 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
+  margin: 1rem;
 }
 
 header {
@@ -17,43 +18,77 @@ header {
 }
 
 .container {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 35px;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-h1,
 h2 {
   margin-bottom: 10px;
+  font-size: xx-large;
 }
 
 select,
 input[type="checkbox"] {
   margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: x-large;
 }
 
 button {
   display: block;
-  margin: 10px 0;
-  padding: 10px;
+  margin: 20px 0;
+  padding: 20px;
   width: 100%;
   background-color: #4caf50;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: x-large;
 }
 
 button:hover {
   background-color: #45a049;
 }
 
+#sauce-container {
+  display: flex;
+  flex-direction: column;
+}
+#sauce-container label span{
+  font-size: x-large;
+  margin-left: 5px;
+}
+#sauce-container label input{
+  width: 20px;
+  height: 20px;
+}
+
+#condiment-container {
+  display: flex;
+  flex-direction: column;
+}
+#condiment-container label span{
+  font-size: x-large;
+  margin-left: 5px;
+}
+#condiment-container label input{
+  width: 20px;
+  height: 20px;
+}
+
 footer {
+  font-size: x-large;
+  position: fixed;
   background-color: #333;
   color: #fff;
   padding: 10px;
   text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
