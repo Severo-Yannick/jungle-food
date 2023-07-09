@@ -59,11 +59,24 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-#sauce-container label span{
+#sauce-container label span {
   font-size: x-large;
   margin-left: 5px;
 }
-#sauce-container label input{
+#sauce-container label input {
+  width: 20px;
+  height: 20px;
+}
+
+#vegetable-container {
+  display: flex;
+  flex-direction: row;
+}
+#vegetable-container label span {
+  font-size: x-large;
+  margin-right: 5px;
+}
+#vegetable-container label input {
   width: 20px;
   height: 20px;
 }
@@ -72,11 +85,11 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-#condiment-container label span{
+#condiment-container label span {
   font-size: x-large;
   margin-left: 5px;
 }
-#condiment-container label input{
+#condiment-container label input {
   width: 20px;
   height: 20px;
 }
